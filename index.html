@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#123d46" />
+  <meta name="description" content="溪影尋蹤｜多人 AR 魚類生態推理遊戲" />
+  <title>溪影尋蹤｜Trace of River Shadows</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="icon-btn" id="backBtn" aria-label="返回" hidden>←</button>
+      <div class="brand"><span class="brand-mark">溪</span><div><strong>溪影尋蹤</strong><small>TRACE OF RIVER SHADOWS</small></div></div>
+      <button class="icon-btn" id="helpBtn" aria-label="遊戲說明">?</button>
+    </header>
+    <main id="app" aria-live="polite"></main>
+    <nav class="bottom-nav" id="bottomNav" hidden>
+      <button data-tab="game" class="active"><span>🏞️</span>遊戲</button>
+      <button data-tab="cards"><span>🃏</span>情報卡</button>
+      <button data-tab="players"><span>👧</span>玩家</button>
+      <button data-tab="me"><span>🐟</span>我的魚</button>
+    </nav>
+  </div>
+  <div class="toast" id="toast"></div>
+  <div class="modal-backdrop" id="modal" hidden><section class="modal-card" id="modalContent"></section></div>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js"></script>
+  <script src="app.js"></script>
+  <script src="firebase-sync.js"></script>
+</body>
+</html>

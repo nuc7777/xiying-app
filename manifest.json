@@ -1,0 +1,10 @@
+{
+  "name": "溪影尋蹤 Trace of River Shadows",
+  "short_name": "溪影尋蹤",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fbfaf4",
+  "theme_color": "#123d46",
+  "lang": "zh-TW",
+  "description": "多人 AR 魚類生態推理遊戲"
+}
